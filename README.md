@@ -1,7 +1,7 @@
 # Machine-Learning
 
 ## Project Overview
-Harumnesia adalah suatu web yang menggunakan AI... 
+Proyek ini merupakan bagian machine learning yang digunakan dalam web Harumnesia yang digunakan untuk membuat model rekomendasi parfum. Untuk membangun model pada web Harumnesia kami membangun 2 model menggunakan TensorFlow. 
 
 ## Dataset
 Ada dua dataset yang digunakan dalam proyek ini. Dataset pertama adalah dataset parfum lokal yang dikumpulkan dan dibuat sendiri, dan dapat diakses di [di sini](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Clean/Dataset_Harumnesia_clean.csv).
@@ -15,7 +15,7 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
 3. **Data Cleaning**:
    
-      Kami melakukan cleaning dataset sebelum digunakan untuk mengatur huruf kapital atau huruf kecil pada dataset yang ada. Selain itu juga dilakukan penyamaan pada format harga parfum agar tampilannya sama.
+      Kami melakukan cleaning dataset sebelum digunakan untuk mengatur huruf kapital atau huruf kecil pada dataset yang ada. Selain itu juga dilakukan penyamaan pada format harga parfum agar tampilannya sama. Untuk dataset model kedua dilakukan penghapusan kolom no dan menggabungkan notes menjadi satu.
    
 5. **Data Preprocessing**:
    
@@ -33,7 +33,7 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
    b. Model Kedua
    
-   Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
+   Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow dan dilanjutkan dengan cosine similarity.
 9. **Training**:
    
    Model dilatih menggunakan TensorFlow dan Keras
