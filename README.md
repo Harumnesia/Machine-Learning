@@ -21,7 +21,7 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
    a. Model Pertama
    
-         Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
+   Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
    
 7. **Model Development**:
    
