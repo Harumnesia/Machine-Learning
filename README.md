@@ -16,11 +16,14 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
 4. **Model Development**:
    Model yang digunakan pada web Harumnesia ada dua yaitu://
+   
    a. 
       Deskripsi parfum diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian diolah (scaling, one-hot encoding, TF-IDF), kemudian dimensinya direduksi dengan autoencoder dan dikelompokkan dengan K-Means. Input user dicocokkan ke cluster dan direkomendasikan dengan cosine similarity.
+   
    b. Model Cosine Similarity//
+   
       Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
-5. **Training**:
+6. **Training**:
    Model dilatih menggunakan autoencoder
-6. **Evaluasi**:
+7. **Evaluasi**:
    Model di evaluasi menggunakan
