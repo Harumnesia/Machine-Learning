@@ -29,6 +29,7 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
       Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
 7. **Training**:
+   
    Model dilatih menggunakan TensorFlow dan Keras
-8. **Evaluasi**:
+9. **Evaluasi**:
    Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
