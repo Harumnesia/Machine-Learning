@@ -20,21 +20,23 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
 5. **Data Preprocessing**:
    
    a. Model Pertama
+   
       Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
    
-6. **Model Development**:
+7. **Model Development**:
    
    Model yang digunakan pada web Harumnesia ada dua yaitu:
    
    a. Model Pertama
+   
      Model yang digunakan autoencoder untuk feature extraction adalah neural network. Untuk melakukan clustering data hasil dari feature extraction autoencoder menggunakan K-Means.
    
    b. Model Kedua
    
       Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
-8. **Training**:
+9. **Training**:
    
    Model dilatih menggunakan TensorFlow dan Keras
-9. **Evaluasi**:
+10. **Evaluasi**:
     
    Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
