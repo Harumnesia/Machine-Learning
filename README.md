@@ -15,10 +15,11 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    Kami melakukan cleaning dataset sebelum digunakan untuk mengatur huruf kapital atau huruf kecil pada dataset yang ada. Selain itu juga dilakukan penyamaan pada format harga parfum agar tampilannya sama.
    
 4. **Data Preprocessing**:
+   
    a. Model Pertama
       Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
    
-5. **Model Development**:
+6. **Model Development**:
    Model yang digunakan pada web Harumnesia ada dua yaitu:
    
    a. Model Pertama
