@@ -29,14 +29,14 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
    a. Model Pertama
    
-        Model yang digunakan autoencoder untuk feature extraction adalah neural network. Untuk melakukan clustering data hasil dari feature extraction autoencoder menggunakan K-Means.
+   Model yang digunakan autoencoder untuk feature extraction adalah neural network. Untuk melakukan clustering data hasil dari feature extraction autoencoder menggunakan K-Means.
    
    b. Model Kedua
    
-         Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
+   Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
 9. **Training**:
    
-      Model dilatih menggunakan TensorFlow dan Keras
+   Model dilatih menggunakan TensorFlow dan Keras
 10. **Evaluasi**:
     
-       Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
+    Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
