@@ -39,4 +39,4 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    Model dilatih menggunakan TensorFlow dan Keras
 10. **Evaluasi**:
     
-   Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
+    Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
