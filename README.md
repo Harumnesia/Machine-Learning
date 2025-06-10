@@ -11,17 +11,17 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
 
 1. **Data Collection**:
    
-   Untuk parfum lokal kami mengumpulkan dataset dari informasi-informasi yang diperoleh melalui online shop dan untuk dataset parfum luar kami menggunakan dataset yang ada di kaggle.
+      Untuk parfum lokal kami mengumpulkan dataset dari informasi-informasi yang diperoleh melalui online shop dan untuk dataset parfum luar kami menggunakan dataset yang ada di kaggle.
    
 3. **Data Cleaning**:
    
-   Kami melakukan cleaning dataset sebelum digunakan untuk mengatur huruf kapital atau huruf kecil pada dataset yang ada. Selain itu juga dilakukan penyamaan pada format harga parfum agar tampilannya sama.
+      Kami melakukan cleaning dataset sebelum digunakan untuk mengatur huruf kapital atau huruf kecil pada dataset yang ada. Selain itu juga dilakukan penyamaan pada format harga parfum agar tampilannya sama.
    
 5. **Data Preprocessing**:
    
    a. Model Pertama
    
-      Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
+         Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
    
 7. **Model Development**:
    
@@ -29,14 +29,14 @@ Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. 
    
    a. Model Pertama
    
-     Model yang digunakan autoencoder untuk feature extraction adalah neural network. Untuk melakukan clustering data hasil dari feature extraction autoencoder menggunakan K-Means.
+        Model yang digunakan autoencoder untuk feature extraction adalah neural network. Untuk melakukan clustering data hasil dari feature extraction autoencoder menggunakan K-Means.
    
    b. Model Kedua
    
-      Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
+         Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow. 
 9. **Training**:
    
-   Model dilatih menggunakan TensorFlow dan Keras
+      Model dilatih menggunakan TensorFlow dan Keras
 10. **Evaluasi**:
     
-    Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
+       Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
