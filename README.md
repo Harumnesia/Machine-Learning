@@ -19,7 +19,8 @@ Ada dua dataset yang digunakan dalam proyek ini:
 ### 1. **Data Collection**:
    
 - **Parfum Lokal**: Dikumpulkan dari berbagai sumber online shop.
-- **Parfum luar**: Diambil dari kaggle.
+- **Parfum luar**: Diambil dari kaggle [Akses Dataset Parfum Luar](https://www.kaggle.com/datasets/olgagmiufana1/fragrantica-com-fragrance-dataset/data).
+
    
 ### 2. **Data Cleaning**:
    
