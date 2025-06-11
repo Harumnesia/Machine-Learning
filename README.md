@@ -61,7 +61,7 @@ Ada dua dataset yang digunakan dalam proyek ini:
 ### 6. **Evaluasi**:
     
 - **Autoencoder** di evaluasi menggunakan **Mean Square Error (MSE)**
-- **K-Means**di evaluasi menggunakan **Silhouette Score**
+- **K-Means** di evaluasi menggunakan **Silhouette Score**
 
 ---
 
