@@ -73,10 +73,12 @@ Ada dua dataset yang digunakan dalam proyek ini:
 git clone https://github.com/Harumnesia/Machine-Learning.git
 cd Machine-Learning
 
-#Virtual Environment
+# Membuat virtual environment
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+
+# Aktivasi (pilih sesuai OS)
+source venv/bin/activate      # Linux/macOS
+venv\Scripts\activate         # Windows
 
 #Install Dependencies
 pip install -r requirements.txt
