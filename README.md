@@ -67,3 +67,20 @@ Ada dua dataset yang digunakan dalam proyek ini:
 ---
 
 ## How to Run the Code
+
+### **Clone Repository**
+```bash
+git clone https://github.com/Harumnesia/Machine-Learning.git
+cd Machine-Learning
+
+### **Virtual Environment**
+
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+### **Install Dependencies**
+pip install -r requirements.txt
+
+### **Menjalankan Notebook**
+jupyter notebook
