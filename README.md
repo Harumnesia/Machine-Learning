@@ -9,7 +9,7 @@ Ada dua dataset yang digunakan dalam proyek ini:
    Dikumpulkan dan dibuat sendiri, dan dapat diakses di
    [Akses Dataset Lokal](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Clean/Dataset_Harumnesia_clean.csv).
 2. **Dataset Gabungan (Lokal + Luar)**
-   Gabungan dataset parfum lokal yang telah dibuat sendiri dengan dataset parfum luar yang di peroleh dari kaggle.
+   Gabungan dataset parfum lokal yang telah dibuat sendiri dengan dataset parfum luar yang di peroleh dari kaggle
    [Akses Dataset Gabungan](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Gabungan/dataset_parfum_gabungan.csv).
 
 ---
