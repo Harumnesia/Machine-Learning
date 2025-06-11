@@ -1,27 +1,42 @@
 # Machine-Learning
 
 ## Project Overview
-Proyek ini merupakan bagian machine learning yang digunakan dalam web Harumnesia yang digunakan untuk membuat model rekomendasi parfum. Untuk membangun model pada web Harumnesia kami membangun 2 model menggunakan TensorFlow. 
+Proyek ini mengembangkan dua model rekomendasi parfum berbasis machine learning dengan memanfaatkan data parfum lokal serta gabungan lokal dan internasional. Model pertama menyajikan rekomendasi berdasarkan input pengguna seperti gender, situasi, konsentrasi, ukuran, harga, dan deskripsi parfum. Deskripsi tersebut diproses menggunakan Gemini API dan LangChain untuk menghasilkan informasi notes, yang kemudian diolah melalui scaling, one-hot encoding, dan TF-IDF. Hasilnya direduksi menggunakan autoencoder dan dikelompokkan dengan K-Means, sehingga preferensi pengguna dapat dicocokkan ke dalam klaster dan diberikan rekomendasi menggunakan cosine similarity. Sementara itu, model kedua menggunakan pendekatan content-based filtering yang lebih langsung, dengan merepresentasikan notes parfum menggunakan TF-IDF Vectorization dan mengonversinya ke format TensorFlow. Kedua model ini diintegrasikan ke sistem aplikasi melalui file .h5 dan .pkl, membentuk fondasi rekomendasi yang cepat, relevan, dan adaptif terhadap preferensi pengguna.
 
 ## Dataset
-Ada dua dataset yang digunakan dalam proyek ini. Dataset pertama adalah dataset parfum lokal yang dikumpulkan dan dibuat sendiri, dan dapat diakses di [di sini](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Clean/Dataset_Harumnesia_clean.csv).
-Dataset kedua adalah dataset gabungan yang berisi parfum lokal dan parfum luar. Kami mendapatkan dataset ini dari menggabungkan parfum lokal yang telah kami buat dan dataset yang kami peroleh dari kaggle sebagai dataset parfum luar yang dapat diakses [di sini](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Gabungan/dataset_parfum_gabungan.csv).
+Ada dua dataset yang digunakan dalam proyek ini: 
+1. **Dataset Parfum Lokal**
+   Dikumpulkan dan dibuat sendiri, dan dapat diakses di
+   [Akses Dataset Lokal](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Clean/Dataset_Harumnesia_clean.csv).
+2. **Dataset Gabungan (Lokal + Luar)**
+   Gabungan dataset parfum lokal yang telah dibuat sendiri dengan dataset parfum luar yang di peroleh dari kaggle.
+   [Akses Dataset Gabungan](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Gabungan/dataset_parfum_gabungan.csv).
+
+---
 
 ## Machine Learning Workflow
 
-1. **Data Collection**:
+### 1. **Data Collection**:
    
-      Untuk parfum lokal kami mengumpulkan dataset dari informasi-informasi yang diperoleh melalui online shop dan untuk dataset parfum luar kami menggunakan dataset yang ada di kaggle.
+- **Parfum Lokal**: Dikumpulkan dari berbagai sumber online shop.
+- **Parfum luar**: Diambil dari kaggle.
    
-3. **Data Cleaning**:
+### 2. **Data Cleaning**:
    
-      Kami melakukan cleaning dataset sebelum digunakan untuk mengatur huruf kapital atau huruf kecil pada dataset yang ada. Selain itu juga dilakukan penyamaan pada format harga parfum agar tampilannya sama. Untuk dataset model kedua dilakukan penghapusan kolom no dan menggabungkan notes menjadi satu.
+- Standarisasi format huruf dan harga
+- Menghapus kolom yang tidak relevan
+- Menggabungkan notes
    
-5. **Data Preprocessing**:
+### 3. **Data Preprocessing**:
    
-   a. Model Pertama
+#### a. Model Pertama
    
-   Deskripsi parfum yang diinputkan user diproses menggunakan Gemini API dan LangChain untuk menghasilkan notes yang kemudian setiap inputnya diolah menjadi  data numerik (scaling, one-hot encoding, TF-IDF), yang kemudian dimensinya direduksi dengan autoencoder.
+- Notes parfum diproses dengan Gemini API dan LangChain
+- Notes diolah menjadi  data numerik melalui :
+  - **Scaling**
+  - **One-hot encoding**
+  - **TF-IDF**
+- Hasilnya direduksi dengan autoencoder
    
 7. **Model Development**:
    
