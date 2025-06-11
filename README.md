@@ -30,28 +30,39 @@ Ada dua dataset yang digunakan dalam proyek ini:
 ### 3. **Data Preprocessing**:
    
 #### a. Model Pertama
+
+- Deskripsi parfum diproses menggunakan Gemini API dan LangChain untuk mengekstrak informasi notes parfum
+- Fitur kemudian diolah menjadi data numerik melalui:
+  - **TF-IDF Vectorization** untuk notes
+  - **One-hot encoding** untuk fitur kategorikal
+  - **Scaling** untuk fitur numerikal
+- Semua fitur digabungkan menjadi satu matriks fitur
+  
+#### b. Model Kedua
+- Notes parfum diolah dengan **TF-IDF Vectorization** 
+
+### 4. **Model Development**:
    
-- Notes parfum diproses dengan Gemini API dan LangChain
-- Notes diolah menjadi  data numerik melalui :
-  - **Scaling**
-  - **One-hot encoding**
-  - **TF-IDF**
-- Hasilnya direduksi dengan autoencoder
+#### a. Model Pertama
    
-7. **Model Development**:
+- **Autoencoder** untuk feature extraction
+- **Clustering dengan K-Means** untuk mengelompokkan parfum
+- **Cosine Similarity** untuk mengukur kemiripan rekomendasi parfum
    
-   Model yang digunakan pada web Harumnesia ada dua yaitu:
+#### b. Model Kedua
+
+- **Convert TF-IDF ke TensorFlow**
+- **Cosine Similarity** untuk mengukur kemiripan rekomendasi parfum
+
+### 5. **Training**:
    
-   a. Model Pertama
-   
-   Model yang digunakan autoencoder untuk feature extraction adalah neural network. Untuk melakukan clustering data hasil dari feature extraction autoencoder menggunakan K-Means.
-   
-   b. Model Kedua
-   
-   Menggunakan TF-IDF Vectorization untuk mengubah notes parfum menjadi representasi numerik yang kemudian dikonversi ke tensorflow dan dilanjutkan dengan cosine similarity.
-9. **Training**:
-   
-   Model dilatih menggunakan TensorFlow dan Keras
-10. **Evaluasi**:
+- Model dilatih menggunakan TensorFlow dan Keras
+
+### 6. **Evaluasi**:
     
-    Model autoencoder di evaluasi menggunakan Mean Square Error (MSE) dan untuk model K-Means di evaluasi menggunakan silhouette score. 
+- **Autoencoder** di evaluasi menggunakan **Mean Square Error (MSE)**
+- **K-Means**di evaluasi menggunakan **Silhouette Score**
+
+---
+
+## How to Run the Code
