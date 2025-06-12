@@ -14,9 +14,10 @@ Ada dua dataset yang digunakan dalam proyek ini:
 
 ## Model
 Ada dua model yang digunakan dalam proyek ini:
-1. (Model Recomendation)[https://github.com/Harumnesia/Machine-Learning/tree/main/Model%20recomendation]
+1. Model Recomendation
+   (https://github.com/Harumnesia/Machine-Learning/tree/main/Model%20recomendation)
 
-2. Model Cosine Similiarity
+3. Model Cosine Similiarity
    - Akses File model: [1](https://github.com/Harumnesia/Machine-Learning/tree/main/Model/Model_Cosine) dan [2](https://drive.google.com/drive/folders/1KQcPyEzeU19Jek91OwCdcXXEpoZW4Yqp?usp=sharing) 
 
 ---
