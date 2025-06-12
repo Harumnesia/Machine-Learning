@@ -12,6 +12,13 @@ Ada dua dataset yang digunakan dalam proyek ini:
    Gabungan dataset parfum lokal yang telah dibuat sendiri dengan dataset parfum luar yang di peroleh dari kaggle
    [Akses Dataset Gabungan](https://github.com/Harumnesia/Machine-Learning/blob/main/Dataset/Dataset_Gabungan/dataset_parfum_gabungan.csv).
 
+## Model
+Ada dua model yang digunakan dalam proyek ini:
+1. (Model Recomendation)[https://github.com/Harumnesia/Machine-Learning/tree/main/Model%20recomendation]
+
+2. Model Cosine Similiarity
+   - Akses File model: [1](https://github.com/Harumnesia/Machine-Learning/tree/main/Model/Model_Cosine) dan [2](https://drive.google.com/drive/folders/1KQcPyEzeU19Jek91OwCdcXXEpoZW4Yqp?usp=sharing) 
+
 ---
 
 ## Machine Learning Workflow
